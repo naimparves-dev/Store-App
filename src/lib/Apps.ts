@@ -1,7 +1,7 @@
 export const getApps = async () => {
   try {
     const res = await fetch(
-      `${process.env.NEXT_PUBLIC_API_URL}/data.json`
+      `${process.env.NEXT_PUBLIC_SERVER_BASE_URL}/data.json`
     );
 
     if (!res.ok) {
